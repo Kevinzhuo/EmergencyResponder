@@ -3,8 +3,10 @@
     package="com.aos.wangzhuo.emergencyresponder">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.receive_sms" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-sdk android:targetSdkVersion="22" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".AutoResponder"
+            android:label="Auto Responder Setup" />
     </application>
 
 </manifest>
